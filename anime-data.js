@@ -1,7 +1,7 @@
 const animeList = [
 
      {
-        "title": "เด็กแฝดราชามังกร .ซับไทย",
+        "title": "เด็กแฝดราชามังกร ซับไทย",
         "img": "https://drive.google.com/uc?id=1iGWsrr08oWLjhEKMavAAKDf-DAECra7P",
         "type": "ซับไทย",
         "link": "https://series1000z.com/Dragon-King-Twin-Children.html"
