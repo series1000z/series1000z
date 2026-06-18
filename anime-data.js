@@ -8,10 +8,10 @@ const animeList = [
     },
 
      {
-        "title": "ระบบเปย์สาว! รางวัลเป็นซองเงินสุ่ม พากย์ไทย",
-        "img": "https://img5.pic.in.th/file/secure-sv1/ai_repair_20250922164700164_11zon.jpg",
+        "title": "ยอดภารโรงพันธุ์มหาประลัย พากย์ไทย",
+        "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCjMKHpi1VostzXCzhAe-JwR0XpE-KsUHW8GggH_Gf-Iwc6ZjykiSe6yoSZykwROm2An751qu6NDRfx7YosYhONqvtgJnJbI30NoydUONqvSXQ-ov6k8NFjRFKIHWWn5LosaepTDaaLvPlfzIwNmkYTuDiX8olhW8cU0ODGb3n3jcM2eXpN1CbScgEZg/s320/messageImage_1781735029860.jpg",
         "type": "พากย์ไทย",
-        "link": "https://series-bk.github.io/The-pay-girl-system-rewards-you-with-random-money-envelopes.html"
+        "link": "https://series1000z.com/The-Ultimate-Janitor.html"
     },
 
      {
