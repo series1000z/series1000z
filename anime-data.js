@@ -1,10 +1,10 @@
 const animeList = [
 
      {
-        "title": "ระบบหลอกสาว กับฮาเร็มและการปรุงยาของอาเจ็ก พากย์ไทย",
-        "img": "https://img2.pic.in.th/pic/27315544-5aa5b722dcd81781.webp",
-        "type": "พากย์ไทย",
-        "link": "https://series-bk.github.io/There-is-a-harem-system-and-Ajek-medicine-concoction.html"
+        "title": "เด็กแฝดราชามังกร ซับไทย",
+        "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLzcowbPmt_rQERmOqiQvOsNZiskatblD24zibb-HvZKokvrao8Uuxx5IcxNKBpPTDZF_6_C8NvN3QnSZuoC_gxJcQeeE4GF5mC7CiVO-uG2wKnQr5pzFjvtg3jVHAzZ7W657KBfZyK2ejJQ283X778bFMcpKFFFywb-f-CA0VgMzo4Anzs0olvYYwkA/s320/messageImage_1781734975990_11zon.jpg",
+        "type": "ซับไทย",
+        "link": "https://series1000z.com/Dragon-King-Twin-Children.html"
     },
 
      {
