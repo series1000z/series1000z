@@ -9,7 +9,7 @@ const animeList = [
 
      {
         "title": "ยอดภารโรงพันธุ์มหาประลัย พากย์ไทย",
-        "img": "https://drive.google.com/uc?export=view&id=1iGWsrr08oWLjhEKMavAAKDf-DAECra7P",
+        "img": "https://lh3.googleusercontent.com/d/1EtPjrof5UxvxytzuPSBjoWjBGP14Myv8=s1000",
         "type": "พากย์ไทย",
         "link": "https://series1000z.com/The-Ultimate-Janitor.html"
     },
