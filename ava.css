@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Kanit', sans-serif;
+  background: #141414;
+  color: #fff;
+}
+
+header {
+  background-color: #ff3d00;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  padding: 6px 12px;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffccbc;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+@media(max-width: 600px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #ff3d00;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 200px;
+    z-index: 100;
+    border-radius: 8px;
+    padding: 10px;
+    align-items: flex-start;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    padding: 10px;
+    text-align: left;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+nav.active {
+  display: flex;
+}
+
+.menu-toggle {
+  display: flex;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+.anime-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  margin: 0 auto 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.anime-img:hover {
+  transform: scale(1.03);
+}
+
+.anime-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #ff7043;
+  margin-bottom: 10px;
+}
+
+.anime-desc {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+  line-height: 1.6;
+  color: #ddd;
+  font-size: 1rem;
+}
+
+h2 {
+  color: #ffa07a;
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.episode-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+}
+
+.episode-list li a {
+  display: block;
+  background-color: #222;
+  color: #ffa07a;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.episode-list li a:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1f1f1f;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+#histats_wrapper, #histatsC, #histats_counter {
+  display: none !important;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
