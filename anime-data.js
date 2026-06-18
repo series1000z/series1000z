@@ -2,7 +2,7 @@ const animeList = [
 
      {
         "title": "เด็กแฝดราชามังกร ซับไทย",
-        "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLzcowbPmt_rQERmOqiQvOsNZiskatblD24zibb-HvZKokvrao8Uuxx5IcxNKBpPTDZF_6_C8NvN3QnSZuoC_gxJcQeeE4GF5mC7CiVO-uG2wKnQr5pzFjvtg3jVHAzZ7W657KBfZyK2ejJQ283X778bFMcpKFFFywb-f-CA0VgMzo4Anzs0olvYYwkA/s320/messageImage_1781734975990_11zon.jpg",
+        "img": "https://drive.google.com/file/d/1iGWsrr08oWLjhEKMavAAKDf-DAECra7P/view?usp=sharing",
         "type": "ซับไทย",
         "link": "https://series1000z.com/Dragon-King-Twin-Children.html"
     },
