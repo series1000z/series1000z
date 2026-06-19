@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>อนิเมะพากย์ไทย</title>
+  <link rel="icon" href="https://lh3.googleusercontent.com/d/1EtPjrof5UxvxytzuPSBjoWjBGP14Myv8=s150" type="image/png" />
+  <link rel="canonical" href="https://series1000z.com/animethai.html" />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Kanit', sans-serif;
+      background: #141414;
+      color: #fff;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    header {
+      background-color: #ff3d00;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: relative;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: white;
+    }
+    nav {
+      display: flex;
+      gap: 10px;
+    }
+    nav a {
+      padding: 6px 12px;
+      font-weight: bold;
+      color: white;
+    }
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .menu-toggle span {
+      width: 25px;
+      height: 3px;
+      background: white;
+      margin: 4px 0;
+      border-radius: 2px;
+    }
+
+    @media(max-width: 600px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        background-color: #ff3d00;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        width: 100%;
+        padding: 10px 20px;
+      }
+      nav.active {
+        display: flex;
+      }
+      nav a {
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+      }
+      .menu-toggle {
+        display: flex;
+      }
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+    h1 {
+      text-align: center;
+      color: #ffa07a;
+      margin-bottom: 20px;
+    }
+    .search-container {
+      max-width: 400px;
+      margin: 0 auto 20px;
+    }
+    input[type="search"] {
+      width: 100%;
+      padding: 10px 15px;
+      border-radius: 25px;
+      border: none;
+      font-size: 1rem;
+      outline: none;
+    }
+    .anime-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    @media(min-width: 768px) {
+      .anime-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    .anime-card {
+      background-color: #1f1f1f;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .anime-card:hover {
+      transform: scale(1.05);
+    }
+    .anime-card img {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      display: block;
+    }
+    .anime-info {
+      padding: 10px;
+    }
+    .anime-title {
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 5px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .anime-ep {
+      color: #ffa07a;
+      font-size: 0.9rem;
+    }
+    .pagination {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .pagination button {
+      background-color: #ff3d00;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      margin: 0 2px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 0.85rem;
+      cursor: pointer;
+      min-width: 32px;
+    }
+    .pagination button:disabled {
+      background-color: #888;
+      cursor: default;
+    }
+    .pagination button.active {
+      background-color: #ffa07a;
+    }
+    .pagination span {
+      color: #ccc;
+      font-size: 1rem;
+      padding: 0 6px;
+      user-select: none;
+    }
+    .no-results {
+      text-align: center;
+      color: #f66;
+      font-weight: bold;
+      margin-top: 40px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1f1f1f;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <a class="logo" href="/">Series 1000Z</a>
+  <div class="menu-toggle" id="menuToggle" role="button" tabindex="0" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </div>
+  <nav id="navMenu">
+      <a href="/">หน้าแรก</a>
+    <a href="thai">ซีรีย์พากย์ไทย</a>
+    <a href="animethai">อนิเมะพากย์ไทย</a>
+    <a href="sub">ซีรีย์ซับไทย</a>
+     <a href="animesub">อนิเมะซับไทย</a>
+    
+    <a href="contact">ติดต่อแจ้งปัญหา</a>
+  </nav>
+</header>
+
+<main>
+  <h1>อนิเมะพากย์ไทย</h1>
+  <div class="search-container">
+    <input id="searchInput" type="search" placeholder="ค้นหาอนิเมะ..." aria-label="ค้นหาอนิเมะ" />
+  </div>
+  <div class="anime-grid" id="animeGrid"></div>
+  <div class="no-results" id="noResults" style="display:none;">ไม่พบรายการอนิเมะที่ค้นหา</div>
+  <div class="pagination" id="paginationContainer">
+    <button id="prevBtn">ก่อนหน้า</button>
+    <span id="pageNumbers"></span>
+    <button id="nextBtn">ถัดไป</button>
+  </div>
+</main>
+
+<footer>
+  © 2026 Series 1000Z - ซีรี่ย์จีน ละครสั้นจีน ซีรี่ย์แนวตั้ง ซีรี่ส์จีน ซีรี่ส์แนวตั้ง พากย์ไทย ซับไทย อัพเดทใหม่ทุกวัน.
+</footer>
+
+<script src="anime-data-thai.js"></script>
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('navMenu');
+  menuToggle.addEventListener('click', () => navMenu.classList.toggle('active'));
+  menuToggle.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      navMenu.classList.toggle('active');
+    }
+  });
+
+  const animeGrid = document.getElementById('animeGrid');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const searchInput = document.getElementById('searchInput');
+  const noResults = document.getElementById('noResults');
+  const pageNumbers = document.getElementById('pageNumbers');
+
+  const itemsPerPage = 20;
+  let currentPage = 1;
+  let filteredList = animeList.filter(anime =>
+  anime.type.includes("อนิเมะพากย์ไทย")
+);
+
+  function renderPage(page) {
+    animeGrid.innerHTML = '';
+    const start = (page - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+    const pageItems = filteredList.slice(start, end);
+
+    noResults.style.display = pageItems.length === 0 ? 'block' : 'none';
+
+    pageItems.forEach(anime => {
+      const card = document.createElement('div');
+      card.className = 'anime-card';
+      card.innerHTML = `
+        <a href="${anime.link}" rel="noopener noreferrer">
+          <img src="${anime.img}" alt="${anime.title}" />
+          <div class="anime-info">
+            <div class="anime-title">${anime.title}</div>
+            <div class="anime-ep">${anime.type}</div>
+          </div>
+        </a>
+      `;
+      animeGrid.appendChild(card);
+    });
+
+    prevBtn.disabled = (page === 1);
+    nextBtn.disabled = (page === Math.ceil(filteredList.length / itemsPerPage));
+
+    renderPageNumbers();
+  }
+
+  function renderPageNumbers() {
+    pageNumbers.innerHTML = '';
+    const totalPages = Math.ceil(filteredList.length / itemsPerPage);
+    const maxMiddlePages = 8;
+
+    const createButton = (i) => {
+      const btn = document.createElement('button');
+      btn.textContent = i;
+      if (i === currentPage) {
+        btn.classList.add('active');
+        btn.disabled = true;
+      }
+      btn.addEventListener('click', () => {
+        currentPage = i;
+        renderPage(currentPage);
+        window.scrollTo(0, 0);
+      });
+      pageNumbers.appendChild(btn);
+    };
+
+    const createEllipsis = () => {
+      const dot = document.createElement('span');
+      dot.textContent = '...';
+      dot.style.padding = '0 6px';
+      pageNumbers.appendChild(dot);
+    };
+
+    if (totalPages <= 10) {
+      for (let i = 1; i <= totalPages; i++) createButton(i);
+    } else {
+      createButton(1);
+      let start = Math.max(2, currentPage - 3);
+      let end = Math.min(totalPages - 1, currentPage + 4);
+      if (end - start + 1 > maxMiddlePages) end = start + maxMiddlePages - 1;
+      if (start > 2) createEllipsis();
+      for (let i = start; i <= end; i++) createButton(i);
+      if (end < totalPages - 1) createEllipsis();
+      createButton(totalPages);
+    }
+  }
+
+  prevBtn.addEventListener('click', () => {
+    if (currentPage > 1) {
+      currentPage--;
+      renderPage(currentPage);
+      window.scrollTo(0, 0);
+    }
+  });
+
+  nextBtn.addEventListener('click', () => {
+    const totalPages = Math.ceil(filteredList.length / itemsPerPage);
+    if (currentPage < totalPages) {
+      currentPage++;
+      renderPage(currentPage);
+      window.scrollTo(0, 0);
+    }
+  });
+
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.trim().toLowerCase();
+    currentPage = 1;
+    filteredList = query === ''
+      ? animeList
+      : animeList.filter(anime => anime.title.toLowerCase().includes(query));
+    renderPage(currentPage);
+  });
+
+  renderPage(currentPage);
+</script>
+</body>
+  </html>
