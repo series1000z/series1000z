@@ -1,4 +1,24 @@
 const animeList = [
+             {
+        "title": "ทางเลือกที่สองของลูน่า พากย์ไทย",
+        "img": "https://lh3.googleusercontent.com/d/1tLVMwpUA9fP-5FyXPOyJ1_DAQp4ak5mq=s1000",
+        "type": "อนิเมะพากย์ไทย",
+        "link": "https://series1000z.com/Lunas-second-option.html"
+    },
+
+        {
+        "title": "เจ้าสาวสังเวยมังกร ดันได้สามีคลั่งรัก พากย์ไทย",
+        "img": "https://lh3.googleusercontent.com/d/1feJmPLNag18tTLvuv7F8dJ3vriY6-nx9=s1000",
+        "type": "อนิเมะพากย์ไทย",
+        "link": "https://series1000z.com/The-Bride-Sacrificed-to-the-Dragon.html"
+    },
+
+     {
+        "title": "จอมเวทใต้หน้ากากเสเพล พากย์ไทย",
+        "img": "https://lh3.googleusercontent.com/d/1X4s2O0HpxXTr4CUf29fNQc56G3Kb4uQU=s1000",
+        "type": "อนิเมะพากย์ไทย",
+        "link": "https://series1000z.com/The-Masked-Rogue-Mage.html"
+    },
 
      {
         "title": "เด็กแฝดราชามังกร ซับไทย",
