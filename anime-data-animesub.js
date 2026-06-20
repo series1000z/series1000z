@@ -1,4 +1,11 @@
 const animeList = [
+
+      {
+        "title": "เจ้าชายเป็นหญิงสาว พากย์ไทย",
+        "img": "https://lh3.googleusercontent.com/d/1y9x_C8o8ebnPjBwZLB9WIrVv3NUIweLI=s1000",
+        "type": "อนิเมะพากย์ไทย",
+        "link": "https://series1000z.com/The-prince-is-a-young-woman.html"
+    },
              {
         "title": "ทางเลือกที่สองของลูน่า พากย์ไทย",
         "img": "https://lh3.googleusercontent.com/d/1tLVMwpUA9fP-5FyXPOyJ1_DAQp4ak5mq=s1000",
