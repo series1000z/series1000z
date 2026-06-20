@@ -1,5 +1,18 @@
 const animeList = [
 
+          {
+        "title": "พี่สาวฉันเป็นเจ้าแม่มาเฟีย พากย์ไทย",
+        "img": "https://lh3.googleusercontent.com/d/1aSL-H66i1L7f5UA5H3euZjZFXwe8Ghsw=s1000",
+        "type": "พากย์ไทย",
+        "link": "https://series1000z.com/My-sister-is-a-mafia-boss.html"
+    },
+             {
+        "title": "มังกรคลั่งล้างบางศัตรู พากย์ไทย",
+        "img": "https://lh3.googleusercontent.com/d/1XROHRKjaFfP7_PNg0agOGYntSDawbTEA=s1000",
+        "type": "อนิเมะพากย์ไทย",
+        "link": "https://series1000z.com/The-enraged-dragon-wipes-out-its-enemies.html"
+    },
+
       {
         "title": "เจ้าชายเป็นหญิงสาว พากย์ไทย",
         "img": "https://lh3.googleusercontent.com/d/1y9x_C8o8ebnPjBwZLB9WIrVv3NUIweLI=s1000",
